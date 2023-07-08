@@ -1,0 +1,24 @@
+
+<div class="container mt-5 col-xl-6">
+    <form class="form-inline my-lg-0 " >
+        <input class="form-control w-50 ml-5 mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <a class="btn btn-outline-success my-2 my-sm-0 w-30" routerLink="/addp">New</a>
+      </form>
+</div>
+<div class="container mt-5">
+  <div class="row gap-2">
+      <div class="card m-2 ml-4 col-md-5  col-sm-12"  *ngFor="let post of allData">
+        <div class="card-body">
+          <h5 class="mt-2" >{{post.post_title}}</h5><br>
+          <img [src]="post.post_image" alt="...">
+          <p >{{post.post_message}}</p>
+        </div>
+        <div class="container">
+          <div class="row col-md-12">
+            <button (click)="remove(post)" class="btn btn-danger w-30 text-center col-md-4 my-3 mx-auto btn-block">remove</button>
+            <button [routerLink]="['/list', post.id]" class="btn btn-success w-30 text-center my-3 col-md-4 mx-auto btn-block">update</button> 
+          </div>
+        </div>
+      </div> 
+  </div> 
+</div> 

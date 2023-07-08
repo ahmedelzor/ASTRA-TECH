@@ -1,0 +1,22 @@
+.card{
+    width: 200px !important;
+    border-radius: 20px;
+}
+input{
+    border-radius: 20px;
+}
+button{
+    border-radius: 20px;
+}
+h5{
+    text-align: center;
+}
+img{
+    border-radius:100px;
+    height: 100px;width: 100px; 
+    margin-top: 0%;
+}
+p{
+    margin-top: 50px; 
+    margin-left: 2px;
+}
